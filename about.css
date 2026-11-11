@@ -1,0 +1,160 @@
+
+/* Styling untuk Box Utama */
+.about-box {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(104, 88, 142, 0.12); /* Bayangan ungu lembut */
+    border-radius: 16px;
+    margin: 0 auto;
+    border-top: 8px solid #9b5de5; /* Garis aksen lavender di bagian atas */
+    margin-top: 100px;
+}
+
+/* Header TENTANG KAMI */
+.about-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-header h1 {
+    color: #9b5de5;
+    font-size: 2.4em;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-section h2 {
+    color: #4a4e69;
+    font-size: 1.4em;
+    border-bottom: 2px solid #e0cff2;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Highlight teks penting */
+.highlight {
+    font-weight: bold;
+    color: #7b2cbf;
+}
+
+/* Layout Grid untuk Daftar Tim agar terlihat rapi */
+.team-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.team-list li {
+    background-color: #f8f5ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #9b5de5;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Box khusus untuk Slogan */
+.slogan-box {
+    background: linear-gradient(135deg, #9b5de5, #7b2cbf);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 5px 15px rgba(123, 44, 191, 0.3);
+}
+
+.slogan-box p.quote {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+        
+.slogan-box p.brand {
+    font-size: 1.05em;
+     margin: 0;
+     opacity: 0.9;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    html, body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        display: block;
+        height: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .about-box {
+        width: calc(100% - 30px);
+        max-width: 500px;
+        padding: 20px;
+        margin: 100px auto 30px;
+        box-sizing: border-box;
+    }
+
+    .about-header {
+        margin-bottom: 25px;
+    }
+
+    .about-header h1 {
+        font-size: 1.8em;
+    }
+
+    .about-section {
+        margin-bottom: 25px;
+    }
+
+    .about-section h2 {
+        font-size: 1.2em;
+    }
+
+    .about-section p {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .team-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .slogan-box {
+        padding: 20px 15px;
+        margin-top: 25px;
+    }
+
+    .slogan-box p.quote {
+        font-size: 1.1em;
+    }
+
+    .slogan-box p.brand {
+        font-size: 0.9em;
+    }
+}

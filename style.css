@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F187E3;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: 100px;
+  font-family: "Caveat Brush", cursive;
+
+  span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid white;
+    animation: blink 0.75s infinite;
+  }
+
+  .color {
+    color: #98478C;
+  }
+  .color-1 {
+    color: #4480ff;
+  }
+  .color-2 {
+    color: #FFD725;
+  }
+  .color-3 {
+    color: #ED5959;
+  }
+  .color-4 {
+    color: #7b2cbf;
+  }
+}
+p.info {
+  font-size: 12px;
+  margin-top: 6rem;
+  color: #747474;
+
+  a {
+    text-decoration: none;
+    color: #4480ff;
+  }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box img {
+    width: 430px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+}
+
+.box h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+.cara-pemakaian {
+  color: white;
+  text-align: center;
+  font-family: "Caveat Brush", cursive;
+  font-size: 30px;
+}
+
+
+.Komposisi {
+    background-color: #ffffff;
+    max-width: 1000px; 
+    width: 100%;
+    padding: 25px;
+    margin: 0 auto 25px auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(104, 88, 142, 0.12);
+    border-top: 6px solid #9b5de5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.Komposisi-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.judul-komposisi {
+    color: #7b2cbf;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0cff2;
+    padding-bottom: 10px;
+}
+
+.Komposisi-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #e0cff2;
+    color: #4a4e69;
+    font-weight: 500;
+    position: relative;
+    padding-left: 22px;
+}
+
+/* Menghilangkan garis putus-putus di item paling bawah */
+.Komposisi-list li:last-child {
+    border-bottom: none;
+}
+
+/* Kustomisasi titik peluru (bullet) menjadi warna ungu */
+.Komposisi-list li::before {
+    content: '•';
+    color: #9b5de5;
+    font-size: 1.8em;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    line-height: 1;
+}
+
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #747474;
+  }
+}
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+    margin: 150px 10px 30px;
+    text-align: center;
+  }
+
+    .container {
+      width: 100%;
+      padding: 0 12px;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      width: 100%;
+      max-width: 390px;
+      box-sizing: border-box;
+    }
+
+  .box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  .Komposisi {
+    width: calc(100% - 30px);
+    max-width: 430px;
+    margin: 0 auto 25px;
+    padding: 20px;
+    }
+
+  .judul-komposisi {
+    font-size: 1.2em;
+  }
+}
+
+
+
+
