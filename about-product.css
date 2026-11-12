@@ -1,0 +1,84 @@
+
+.information-product {
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(104, 88, 142, 0.12); /* Bayangan ungu lembut */
+    border-radius: 16px;
+    margin: 0 auto;
+    border-top: 8px solid #9b5de5; /* Garis aksen lavender di bagian atas */
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.information-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.information-header h3 {
+    color: #9b5de5;
+    font-size: 2.4em;
+    margin: 0;
+    letter-spacing: 1.5px;
+    font-family: "Caveat Brush", cursive;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #7b2cbf;
+}
+
+.information-section {
+    margin-bottom: 30px;
+}
+
+.information-section p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    html, body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body {
+        display: block;
+        height: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .information-product {
+        width: calc(100% - 30px);
+        max-width: 500px;
+        padding: 20px;
+        margin: 100px auto 30px;
+        box-sizing: border-box;
+    }
+
+    .information-header {
+        margin-bottom: 25px;
+    }
+
+    .information-header h3 {
+        font-size: 1.8em;
+    }
+
+    .information-section {
+        margin-bottom: 25px;
+    }
+
+    .information-section p {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+}
