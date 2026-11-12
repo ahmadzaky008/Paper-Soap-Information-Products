@@ -89,6 +89,6 @@
     .information-section img {
         width: 430px;
         height: auto;
-        margin-left: 0px;
+        margin: 0 auto;
     }   
 }
