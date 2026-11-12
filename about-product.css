@@ -40,10 +40,15 @@
     text-align: justify;
 }
 
-.information-section img {
+.img-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-display img {
     width: 430px;
     height: auto;
-    margin-left: 250px;
 }
 
 @media screen and (max-width: 700px) {
@@ -86,10 +91,18 @@
         text-align: left;
     }
 
+    .img-display {
+    width: 100%;
+      padding: 0 12px;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .information-section img {
-        width: 430px;
+        width: 100%;
+        max-width: 390px;
         height: auto;
-        margin: 0 auto;
-        margin-left: 0 auto;
+        box-sizing: border-box;
     }   
 }
