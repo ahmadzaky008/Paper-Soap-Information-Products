@@ -40,7 +40,11 @@
     text-align: justify;
 }
 
-
+.information-section img {
+    width: 430px;
+    height: auto;
+    margin-left: 250px;
+}
 
 @media screen and (max-width: 700px) {
     html, body {
@@ -81,4 +85,10 @@
         line-height: 1.7;
         text-align: left;
     }
+
+    .information-section img {
+        width: 430px;
+        height: auto;
+        margin-left: 0px;
+    }   
 }
