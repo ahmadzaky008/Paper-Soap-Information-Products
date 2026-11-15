@@ -33,13 +33,8 @@
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.active {
-  background-color: #04AA6D;
-  color: white;
+  color:#F187E3;
+  background-color: transparent;
 }
 
 .navbar img {
